@@ -1,4 +1,4 @@
-![Screenshot (338)](https://github.com/user-attachments/assets/9f72b211-51ea-4b55-943e-da26f1161a7b)#  Smart Waste Sorting System 
+#  Smart Waste Sorting System 
 
 An AI-powered waste sorting system that efficiently classifies waste into categories such as **recyclable, compostable, non-recyclable, dry, and wet waste**. This system helps reduce contamination in recycling streams and increases material recovery rates.
 
