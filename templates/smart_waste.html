@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart System for Waste Sorting</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="logo">
+        <h1>Smart system for waste sorting</h1>
+        <p>Learn about waste categories and proper disposal methods to create a sustainable future.</p>
+        <header>
+            <div class="button-container">
+                <a href="{{ url_for('login') }}" class="button">Login</a>
+                <a href="{{ url_for('register') }}" class="button">Register</a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <p>Waste refers to any material that is discarded because it no longer serves a useful purpose. It comes in various forms, including solid, 
+           liquid, or gas, and can be generated from households, industries, agriculture, and even natural processes. Proper waste management is 
+           essential for maintaining a clean, healthy, and sustainable environment.</p>
+
+        <p>There are several types of waste, each requiring different methods of disposal and recycling:</p>
+        <section>
+            <div class="categories-container">
+                <div class="category">
+                    <h4>Recyclable waste</h4>
+                    <img src="{{ url_for('static', filename='images/recyclable.png') }}" alt="Recyclable">
+                    <p>This includes materials that can be reprocessed and reused, such as paper, plastics, glass, and metals. Recycling helps conserve 
+                        natural resources, reduces energy consumption, and minimizes pollution.</p>
+                </div>
+                <div class="category">
+                    <h4>Compostable waste</h4>
+                    <img src="{{ url_for('static', filename='images/compostable.png') }}" alt="Compostable">
+                    <p>Organic waste such as food scraps, yard trimmings, and paper products can decompose naturally and be used to enrich soil. Composting 
+                        is an eco-friendly way to reduce landfill waste and promote soil health.</p>
+                </div>
+                <div class="category">
+                    <h4>Non-Recyclable waste</h4>
+                    <img src="{{ url_for('static', filename='images/non-recyclable.png') }}" alt="Non-Recyclable">
+                    <p>Items that cannot be recycled due to their composition or contamination, like certain types of plastic, diapers, and certain electronic 
+                        waste, fall into this category. Proper disposal of non-recyclable waste is crucial to prevent environmental harm.</p>
+                </div>
+                <div class="category">
+                    <h4>Dry waste</h4>
+                    <img src="{{ url_for('static', filename='images/dry.png') }}" alt="Dry">
+                    <p>This includes materials that do not contain moisture, such as plastic, metal, and glass. Dry waste is typically easier to handle and can 
+                        often be recycled.</p>
+                </div>
+                <div class="category">
+                    <h4>Wet waste</h4>
+                    <img src="{{ url_for('static', filename='images/wet.png') }}" alt="Wet">
+                    <p>Wet waste includes organic waste, such as food scraps, kitchen waste, and other biodegradable materials. Wet waste tends to decompose quickly 
+                        and should be properly separated for composting or disposal.</p>
+                </div>
+            </div>
+            <p>By understanding the different types of waste and how to dispose of them correctly, we can reduce pollution, conserve resources, and contribute to 
+                a healthier planet. The Smart Waste Sorting System helps simplify this process by using AI to automatically classify waste, ensuring more accurate 
+                sorting and better environmental outcomes.</p>
+        </section>
+    </main>
+</body>
+</html>

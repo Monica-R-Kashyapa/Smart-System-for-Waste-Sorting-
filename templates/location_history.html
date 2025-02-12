@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location History</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="logo">
+        <h1>Smart System for Waste Sorting</h1>
+        <p>Learn about waste categories and proper disposal methods to create a sustainable future.</p>
+        <div class="button-container">
+            <a href="/" class="button">Home</a>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Location History</h1>
+        </header>
+        <main>
+            {% if locations %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Location Name</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for location in locations %}
+                            <tr>
+                                <td>{{ location.location_name }}</td>
+                                <td>{{ location.latitude }}</td>
+                                <td>{{ location.longitude }}</td>
+                                <td>
+                                    {% if location.is_completed %}
+                                        Completed
+                                    {% else %}
+                                        Pending
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No locations have been added yet.</p>
+            {% endif %}
+            <div class="button-row">
+                <button onclick="window.location.href='/index'" class="btn">Back to Home</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

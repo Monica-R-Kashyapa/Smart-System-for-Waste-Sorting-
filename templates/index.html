@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Detection</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+    <script>
+        function startRealTimeProcessing() {
+            window.location.href = '/real';
+        }
+
+        function stopRealTimeProcessing() {
+            fetch('/stop_processing', {
+                method: 'POST'
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Real-Time Processing Stopped Successfully!');
+                    window.location.href = '/'; // Redirect to the main page (index)
+                } else {
+                    alert('Failed to stop Real-Time Processing.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while stopping Real-Time Processing.');
+            });
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="logo">
+        <h1>Smart System for Waste Sorting</h1>
+        <p>Learn about waste categories and proper disposal methods to create a sustainable future.</p>
+        <div class="button-container">
+            <a href="/" class="button">Home</a>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Waste Detection</h1>
+        </header>
+        <main>
+            <form action="/detect" method="POST" enctype="multipart/form-data">
+                <div class="file-input">
+                    <input type="file" id="file-upload" name="file" accept="image/*" required>
+                </div>
+                <div class="button-row">
+                    <button type="submit">Detect Waste</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="container">
+        <header>
+            <h2>Real-Time Waste Detection</h2>
+        </header>
+        <main>
+            <div class="button-row">
+                <button onclick="startRealTimeProcessing()" class="real-time-button">Start Real-Time Processing</button>
+                <button onclick="stopRealTimeProcessing()">Stop Real-Time Processing</button>
+            </div>
+        </main>
+    </div>
+    <div class="container">
+        <h2>Enter a new location</h2>
+        <form method="POST" action="{{ url_for('submit_location') }}" >
+            <div class="input-group">
+                <label for="location">Location Name:</label>
+                <input type="text" id="location" name="location" placeholder="Enter new location" required>
+            </div>
+            <div class="button-row">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h2>History</h2>
+        <div class="button-row">
+            <button onclick="window.location.href='/location_history'" class="btn">View Location History</button>
+        </div>   
+    </div> 
+</body>
+</html>
