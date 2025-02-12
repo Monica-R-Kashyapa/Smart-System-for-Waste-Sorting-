@@ -1,4 +1,4 @@
-#  Smart Waste Sorting System 
+![Screenshot (338)](https://github.com/user-attachments/assets/9f72b211-51ea-4b55-943e-da26f1161a7b)#  Smart Waste Sorting System 
 
 An AI-powered waste sorting system that efficiently classifies waste into categories such as **recyclable, compostable, non-recyclable, dry, and wet waste**. This system helps reduce contamination in recycling streams and increases material recovery rates.
 
@@ -38,17 +38,15 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 ## **Screenshots**
 
 ### Main Page:
-![Main Page](C:\Users\Monica\Pictures\Screenshots\Screenshot (337).png)
+![Screenshot (337)](https://github.com/user-attachments/assets/c6c35f81-2400-40df-88f6-e6709b7d3bb1)
 
 ### Login Page:
-![Login Page](C:\Users\Monica\Pictures\Screenshots\Screenshot (338).png)
+![Screenshot (338)](https://github.com/user-attachments/assets/77b2c7fe-6158-4650-a62d-0d89b5e6fa7b)
 
-### Waste Detection (Upload):
-![Waste Detection Upload](static/screenshots/waste_upload.png)
-
-### Waste Detection (Real-Time):
-![Waste Detection Real-Time](static/screenshots/waste_realtime.png)
+### User Dashboard
+![Screenshot (339)](https://github.com/user-attachments/assets/5e85a55b-f738-496a-a17a-affbd09f072a)
 
 ### Admin Dashboard:
-![Admin Dashboard](static/screenshots/admin_dashboard.png)
+![Screenshot (341)](https://github.com/user-attachments/assets/f03b5f19-6515-4043-a4be-77860ae2069b)
+
 
