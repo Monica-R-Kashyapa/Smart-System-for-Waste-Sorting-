@@ -38,8 +38,8 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 ## **Screenshots**
 **Dashboard**
 <p align="center">
-  <img src="system%20images/userlogin.png" width="45%" />
   <img src="system%20images/dashboard.png" width="45%" />
+  <img src="system%20images/userlogin.png" width="45%" />
 </p>
 
 **User Dashboard**
@@ -47,8 +47,8 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 
 **Waste Detection by Uploading Images** 
 <p align="center">
-  <img src="system%20images/imageupload1.png" width="45%" />
   <img src="system%20images/imageupload.png" width="45%" />
+  <img src="system%20images/imageupload1.png" width="45%" />
 </p>
 
 **Real Time waste detection**
@@ -69,8 +69,8 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 
 **Admin Dashboard**
 <p align="center">
-  <img src="system%20images/adminmap.png" width="45%" />
   <img src="system%20images/admin.png" width="45%" />
+  <img src="system%20images/adminmap.png" width="45%" />
 </p>
 
 
