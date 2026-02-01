@@ -34,3 +34,45 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 - **Backend**: Flask (Python)
 - **Machine Learning**: TensorFlow, OpenCV, CNN, YOLO/SSD for object detection
 - **Database**: MySQL (for user data and waste location tracking)
+
+## **Screenshots**
+**Dashboard**
+<p align="center">
+  <img src="system%20images/userlogin.png" width="45%" />
+  <img src="system%20images/dashboard.png" width="45%" />
+</p>
+
+**User Dashboard**
+![Img1](system%20images/user.png)
+
+**Waste Detection by Uploading Images** 
+<p align="center">
+  <img src="system%20images/imageupload1.png" width="45%" />
+  <img src="system%20images/imageupload.png" width="45%" />
+</p>
+
+**Real Time waste detection**
+<p align="center">
+  <img src="system%20images/real.png" width="30%" />
+  <img src="system%20images/real1.png" width="30%" />
+  <img src="system%20images/real2.png" width="30%" />
+  
+</p>
+<p align="center">
+  <img src="system%20images/real4.png" width="30%" />
+  <img src="system%20images/real5.png" width="30%" />
+  <img src="system%20images/real6.png" width="30%" />
+</p>
+
+**Location History**
+![Img2](system%20images/location.png)
+
+**Admin Dashboard**
+<p align="center">
+  <img src="system%20images/adminmap.png" width="45%" />
+  <img src="system%20images/admin.png" width="45%" />
+</p>
+
+
+
+
