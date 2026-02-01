@@ -1,6 +1,8 @@
-#  Smart Waste Sorting System 
+#  Smart System for Waste Sorting
 
 An AI-powered waste sorting system that efficiently classifies waste into categories such as **recyclable, compostable, non-recyclable, dry, and wet waste**. This system helps reduce contamination in recycling streams and increases material recovery rates.
+
+---
 
 ##  Features
 
@@ -29,11 +31,21 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
 - **View Waste Locations on a Map** 
   - Interactive map showing all reported waste locations.
 
+---
+## **System Architecture**
+The Smart Waste Sorting System uses a web-based frontend connected to a Flask backend that handles authentication, application logic, and communication with AI modules and the database. An AI waste detection module powered by TensorFlow, OpenCV, and deep learning models (CNN/YOLO/SSD) classifies waste from uploaded images and live camera input. A MySQL database and map interface store and display user data and waste locations, enabling tracking and management through user and admin dashboards.
+
+![Img2](system%20images/architecture.png)
+
+---
+
 ## **Technology Used**
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
 - **Machine Learning**: TensorFlow, OpenCV, CNN, YOLO/SSD for object detection
 - **Database**: MySQL (for user data and waste location tracking)
+
+---
 
 ## **Screenshots**
 **Dashboard**
@@ -73,6 +85,7 @@ An AI-powered waste sorting system that efficiently classifies waste into catego
   <img src="system%20images/adminmap.png" width="45%" />
 </p>
 
+---
 
-
-
+**Note:** 
+Due to the large number of files involved, the complete source code is not included in this repository.
